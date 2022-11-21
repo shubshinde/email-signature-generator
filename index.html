@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Signature by Shubham</title>
+	</head>
+	<body>
+		<header>
+			<span class="heading">Email Signature Generator</span>
+			<p>by Shubham</p>
+		</header>
+
+		<br />
+
+		<form action="signature.html" method="GET" class="fields">
+			<!-- Personal -->
+			<h3>Personal Info:</h3>
+			<input
+				required
+				placeholder="Profile Picture (URL)"
+				type="text"
+				value="https://i.ibb.co/M5x2cmS/unnamed.png"
+				name="emp_profile"
+			/>
+			<input
+				required
+				placeholder="Fullname"
+				type="text"
+				value="Shubham Shinde"
+				name="emp_name"
+			/>
+			<input
+				required
+				placeholder="Role"
+				type="text"
+				value="Software Developer"
+				name="emp_role"
+			/>
+			<input
+				required
+				placeholder="Work Email"
+				type="email"
+				value="shubham@codebase.com"
+				name="emp_email"
+			/>
+			<!-- Company -->
+			<h3>Company Info:</h3>
+			<input
+				required
+				placeholder="Company Name"
+				type="text"
+				value="codebase.com"
+				name="comp_title"
+			/>
+			<input
+				required
+				placeholder="Company Logo (URL)"
+				type="text"
+				value="https://www.codebase.com/wp-content/themes/codebase-theme/img/logo/codebase-2.png"
+				name="comp_logo"
+			/>
+			<input
+				required
+				placeholder="Company website (Https)"
+				type="text"
+				value="https://www.codebase.com"
+				name="comp_url"
+			/>
+
+			<button type="submit">Generate</button>
+
+			<br />
+			<br />
+
+			<!-- Instructions -->
+			<hr />
+			<h4>Instructions :</h4>
+			<span>
+				<p>
+					1. Fill required information & click
+					<b style="color: rgb(12, 96, 142)">Generate</b>
+				</p>
+				<p>
+					2. On next page, copy all visible content with
+					<span class="highlight">CTRL+A</span> &
+					<span class="highlight">CTRL+C</span>
+				</p>
+				<p>
+					3. Paste coppied content in your <b>Gmail</b> email signature (
+					<a target="_blank" href="AddToGamil.pdf">Detailed Instructuons</a> )
+				</p>
+			</span>
+		</form>
+
+		<style>
+			.highlight {
+				background: #91919075;
+				padding: 3px 5px;
+				border-radius: 10px;
+			}
+			header {
+				padding: 0 20px;
+			}
+			header .heading {
+				font-size: 25px;
+				font-weight: 600;
+			}
+			header p {
+				color: orange;
+				font-weight: 500;
+			}
+			.fields {
+				padding: 0 20px;
+				max-width: 500px;
+			}
+			.fields input {
+				width: 100%;
+				padding: 5px;
+				margin-top: 5x;
+				margin-bottom: 5px;
+			}
+			.fields button[type="submit"] {
+				width: fit-content;
+				padding: 7px 13px;
+				margin: 25px 0;
+				background-color: rgb(12, 96, 142);
+				color: #fff;
+				border: none;
+				border-radius: 15px;
+			}
+		</style>
+	</body>
+</html>
