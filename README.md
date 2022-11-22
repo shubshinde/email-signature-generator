@@ -16,6 +16,7 @@
 				</p>
 				<p>
 					3. Paste coppied content in your <b>Gmail</b> email signature (
-					<a target="_blank" href="AddToGamil.pdf">Detailed Instructuons</a> )
+					<a target="_blank" href="AddToGamil.pdf">Detailed Instructions</a> )
 				</p>
+<p>4. You can use  <a href="https://imgur.com/upload"> Imgur.com </a> to host profile picture image.</p>
 			</span>
