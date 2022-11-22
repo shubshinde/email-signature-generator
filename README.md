@@ -1,9 +1,9 @@
 # Email Signature Generator
-- by Shubham
+by Shubham
 
 
 <hr />
-			<h4>Instructions :</h4>
+			<h4>- Instructions :</h4>
 			<span>
 				<p>
 					1. Fill required information & click
