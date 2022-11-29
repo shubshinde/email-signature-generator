@@ -166,12 +166,12 @@
 														font-size: 13px;
 													"
 												>
-													E:
+													M:
 												</td>
 												<td>
 													<a
-														id="emp_email"
-														href="mailto:shubham@codebase.com"
+														id="emp_mobile"
+														href="tel:+917447851524"
 														style="
 															color: #343333 !important;
 															text-decoration: underline !important;
@@ -181,7 +181,7 @@
 															line-height: inherit !important;
 														"
 														class="email"
-														>shubham@codebase.com</a
+														>+917447851524</a
 													>
 												</td>
 											</tr>
@@ -238,7 +238,7 @@
 				var emp_profile = url.searchParams.get("emp_profile");
 				var emp_name = url.searchParams.get("emp_name");
 				var emp_role = url.searchParams.get("emp_role");
-				var emp_email = url.searchParams.get("emp_email");
+				var emp_mobile = url.searchParams.get("emp_mobile");
 				// Company
 				var comp_logo = url.searchParams.get("comp_logo");
 				var comp_title = url.searchParams.get("comp_title");
@@ -249,8 +249,8 @@
 				$("#emp_profile").attr("src", emp_profile);
 				$("#emp_name").text(emp_name);
 				$("#emp_role").text(emp_role);
-				$("#emp_email").text(emp_email);
-				$("#emp_email").attr("href", "mailto:" + emp_email);
+				$("#emp_mobile").text(emp_mobile);
+				$("#emp_mobile").attr("href", "tel:" + emp_mobile);
 				// Company
 				$("#comp_logo").attr("src", comp_logo);
 				$("#comp_logo_url").attr("href", comp_url);

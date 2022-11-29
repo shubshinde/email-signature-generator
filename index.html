@@ -1,138 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Signature by Shubham</title>
-	</head>
-	<body>
-		<header>
-			<span class="heading">Email Signature Generator</span>
-			<p>by Shubham</p>
-		</header>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Signature by Shubham</title>
+</head>
+<body>
+	<header>
+		<span class="heading">Email Signature Generator</span>
+		<p>
+			by Shubham
+			<a style="color: rgb(26, 104, 220); text-decoration: none" href="https://www.codebase.com/">@Codebase</a>
+		</p>
+	</header>
 
-		<br />
+	<br />
 
+	<div class="flex">
 		<form action="signature.html" method="GET" class="fields">
 			<!-- Personal -->
 			<h3>Personal Info:</h3>
-			<input
-				required
-				placeholder="Profile Picture (URL)"
-				type="text"
-				value="https://i.ibb.co/M5x2cmS/unnamed.png"
-				name="emp_profile"
-			/>
-			<input
-				required
-				placeholder="Fullname"
-				type="text"
-				value="Shubham Shinde"
-				name="emp_name"
-			/>
-			<input
-				required
-				placeholder="Role"
-				type="text"
-				value="Software Developer"
-				name="emp_role"
-			/>
-			<input
-				required
-				placeholder="Work Email"
-				type="email"
-				value="shubham@codebase.com"
-				name="emp_email"
-			/>
+			<label for="">Profile Picture (URL)</label>
+			<input required placeholder="Profile Picture (URL)" type="text" value="https://i.ibb.co/M5x2cmS/unnamed.png"
+				name="emp_profile" />
+			<label for="">Fullname</label>
+			<input required placeholder="Fullname" type="text" value="Shubham Shinde" name="emp_name" />
+			<label for="">Role</label>
+			<input required placeholder="Role" type="text" value="Software Developer" name="emp_role" />
+			<label for="">Contact Number</label>
+			<input required placeholder="(+CC) 10 digit number" type="text" value="+917447851524" name="emp_mobile" />
 			<!-- Company -->
 			<h3>Company Info:</h3>
-			<input
-				required
-				placeholder="Company Name"
-				type="text"
-				value="codebase.com"
-				name="comp_title"
-			/>
-			<input
-				required
-				placeholder="Company Logo (URL)"
-				type="text"
+			<label for="">Company Name</label>
+			<input required placeholder="Company Name" type="text" value="codebase.com" name="comp_title" readonly
+				onclick="return false;" style="background-color: #eee; border: 1px solid" />
+			<label for="">Logo URL</label>
+			<input required placeholder="Company Logo (URL)" type="text"
 				value="https://www.codebase.com/wp-content/themes/codebase-theme/img/logo/codebase-2.png"
-				name="comp_logo"
-			/>
-			<input
-				required
-				placeholder="Company website (Https)"
-				type="text"
-				value="https://www.codebase.com"
-				name="comp_url"
-			/>
+				name="comp_logo" readonly onclick="return false;" style="background-color: #eee; border: 1px solid" />
+			<label for="">Website URL</label>
+			<input required placeholder="Company website (Https)" type="text" value="https://www.codebase.com"
+				name="comp_url" readonly onclick="return false;" style="background-color: #eee; border: 1px solid" />
 
 			<button type="submit">Generate</button>
 
-			<br />
-			<br />
+		</form>
 
-			<!-- Instructions -->
-			<hr />
-			<h4>Instructions :</h4>
+		<!-- Instructions -->
+
+		<div class="instructions">
+			<h3>Instructions :</h3>
 			<span>
 				<p>
 					1. Fill required information & click
 					<b style="color: rgb(12, 96, 142)">Generate</b>
 				</p>
 				<p>
-					2. On next page, copy all visible content with
+					2. You can use
+					<a target="_blank" href="https://imgur.com/upload"><b>Imgur.com</b></a>
+					to host your profile picture & generate the URL.
+					<p><small>(Steps: Login to Imgur > Upload Image > Open Uploaded Image In new
+							Tab > Copy URL from address bar )</small></p>
+				</p>
+				<p>
+					3. On next page, copy all visible content with
 					<span class="highlight">CTRL+A</span> &
 					<span class="highlight">CTRL+C</span>
 				</p>
 				<p>
-					3. Paste coppied content in your <b>Gmail</b> email signature (
+					4. Paste coppied content in your <b>Gmail</b> email signature (
 					<a target="_blank" href="AddToGamil.pdf">Detailed Instructions</a> )
 				</p>
 			</span>
-		</form>
+		</div>
+	</div>
 
-		<style>
-			* {
-			    font-family: system-ui;
-			}
-			.highlight {
-				background: #91919075;
-				padding: 3px 5px;
-				border-radius: 10px;
-			}
-			header {
-				padding: 0 20px;
-			}
-			header .heading {
-				font-size: 25px;
-				font-weight: 600;
-			}
-			header p {
-				color: orange;
-				font-weight: 500;
-			}
-			.fields {
-				padding: 0 20px;
-				max-width: 500px;
-			}
-			.fields input {
-				width: 100%;
-				padding: 5px;
-				margin-top: 5x;
-				margin-bottom: 5px;
-			}
-			.fields button[type="submit"] {
-				width: fit-content;
-				padding: 7px 13px;
-				margin: 25px 0;
-				background-color: rgb(12, 96, 142);
-				color: #fff;
-				border: none;
-				border-radius: 15px;
-			}
-		</style>
-	</body>
+	<style>
+		* {
+			font-family: system-ui;
+		}
+
+		body{
+			background-color: #eee;
+		}
+
+		.instructions {
+			padding: 0 20px;
+    height: 100%;
+    box-shadow: 1px 3px 3px 3px #eee;
+	background-color: #fff;
+		}
+
+		.flex {
+			display: flex;
+			width: 100%;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-content: center;
+			justify-content: center;
+			align-items: flex-start;
+			gap: 50px;
+		}
+
+		.highlight {
+			background: #91919075;
+			padding: 3px 5px;
+			border-radius: 10px;
+		}
+
+		header {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+		}
+
+		header .heading {
+			font-size: 30px;
+			font-weight: 600;
+			margin-top: 20px;
+		}
+
+		header p {
+			color: orange;
+			font-weight: 500;
+		}
+
+		.fields {
+			padding: 10px 40px;
+			max-width: 500px;
+			box-shadow: 1px 3px 3px 3px #eee;
+			background-color: #fff;
+		}
+
+		.fields input {
+			width: 100%;
+			padding: 5px;
+			margin-top: 5px;
+			margin-bottom: 20px;
+		}
+
+		.fields button[type="submit"] {
+			width: fit-content;
+			padding: 7px 13px;
+			margin: 25px 0;
+			background-color: rgb(12, 96, 142);
+			color: #fff;
+			border: none;
+			border-radius: 15px;
+		}
+	</style>
+</body>
 </html>
